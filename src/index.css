@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-display: 'Syne', 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8F8F5;
+    color: #141413;
+    overflow-x: hidden;
+  }
+
+  /* Custom selection */
+  ::selection {
+    background-color: #141413;
+    color: #F8F8F5;
+  }
+}
+
+/* Editorial display font styling */
+.font-display {
+  font-family: 'Syne', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.font-editorial {
+  font-family: 'Inter', -apple-system, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D4CE;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9A9A94;
+}
+
+/* Continuous smooth marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom cursor default hide on touch */
+@media (pointer: coarse), (hover: none) {
+  .custom-cursor-element {
+    display: none !important;
+  }
+}
+
+/* Clean hairline borders */
+.border-hairline {
+  border-color: rgba(20, 20, 19, 0.12);
+}
+
+.border-hairline-subtle {
+  border-color: rgba(20, 20, 19, 0.07);
+}

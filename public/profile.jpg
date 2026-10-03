@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="280 60 440 1190" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Skin Tones & Dimensional Shading -->
+    <radialGradient id="faceShading" cx="52%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#DDA37D"/>
+      <stop offset="55%" stop-color="#C88C64"/>
+      <stop offset="85%" stop-color="#AB6F4A"/>
+      <stop offset="100%" stop-color="#8D5534"/>
+    </radialGradient>
+    <linearGradient id="neckShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6E3E22"/>
+      <stop offset="100%" stop-color="#B57750"/>
+    </linearGradient>
+
+    <!-- Full Groomed Beard -->
+    <linearGradient id="beardShade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1F1D1B"/>
+      <stop offset="60%" stop-color="#141311"/>
+      <stop offset="100%" stop-color="#0A0908"/>
+    </linearGradient>
+
+    <!-- Buzzed Fade Hair -->
+    <radialGradient id="hairBuzzed" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#C88C64" stop-opacity="0.1"/>
+      <stop offset="65%" stop-color="#2E2925" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#181513" stop-opacity="0.95"/>
+    </radialGradient>
+
+    <!-- Exact Plaid / Checkered Casual Shirt Fabric -->
+    <pattern id="plaidPattern" width="90" height="90" patternUnits="userSpaceOnUse">
+      <rect width="90" height="90" fill="#F3F0EA"/>
+      <!-- Slate broad checks -->
+      <rect x="0" y="22" width="90" height="20" fill="#475569" fill-opacity="0.26"/>
+      <rect x="0" y="29" width="90" height="6" fill="#0F172A" fill-opacity="0.44"/>
+      <rect x="22" y="0" width="20" height="90" fill="#475569" fill-opacity="0.26"/>
+      <rect x="29" y="0" width="6" height="90" fill="#0F172A" fill-opacity="0.44"/>
+      <!-- Fine accent lines -->
+      <rect x="0" y="68" width="90" height="8" fill="#64748B" fill-opacity="0.2"/>
+      <rect x="68" y="0" width="8" height="90" fill="#64748B" fill-opacity="0.2"/>
+      <rect x="0" y="71" width="90" height="2" fill="#334155" fill-opacity="0.35"/>
+      <rect x="71" y="0" width="2" height="90" fill="#334155" fill-opacity="0.35"/>
+    </pattern>
+
+    <!-- Navy Trousers -->
+    <linearGradient id="trouserGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#222B38"/>
+      <stop offset="50%" stop-color="#18202C"/>
+      <stop offset="100%" stop-color="#0F141C"/>
+    </linearGradient>
+
+    <!-- Soft Standing Ground Shadow -->
+    <radialGradient id="groundShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.15"/>
+      <stop offset="70%" stop-color="#000000" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ground Contact Shadow Under Standing Figure -->
+  <ellipse cx="500" cy="1245" rx="190" ry="8" fill="url(#groundShadow)"/>
+
+  <!-- AJULRAJ STANDING FIGURE (Clean Cutout, NO Background Boxes) -->
+  <g id="ajulrajFigure">
+
+    <!-- Trousers (Navy Blue) -->
+    <path d="M395,890 L635,890 L665,1250 L365,1250 Z" fill="url(#trouserGrad)"/>
+    <line x1="515" y1="940" x2="515" y2="1250" stroke="#10151E" stroke-width="2.5"/>
+    <!-- Left Cargo Pocket on Side -->
+    <rect x="625" y="1060" width="40" height="65" rx="4" fill="#1B232E" stroke="#121820" stroke-width="1.5"/>
+    <path d="M625,1060 L665,1060 L665,1075 L645,1085 L625,1075 Z" fill="#242E3D"/>
+
+    <!-- Belt (Dark Leather with Silver Metallic Buckle) -->
+    <rect x="405" y="885" width="225" height="28" rx="3" fill="#382114" stroke="#22140C" stroke-width="1.5"/>
+    <line x1="410" y1="889" x2="625" y2="889" stroke="#4D2E1C" stroke-dasharray="4,3" stroke-width="1"/>
+    <line x1="410" y1="909" x2="625" y2="909" stroke="#4D2E1C" stroke-dasharray="4,3" stroke-width="1"/>
+    <rect x="500" y="880" width="34" height="38" rx="3" fill="none" stroke="#C5C7CA" stroke-width="4"/>
+    <rect x="516" y="884" width="3" height="30" fill="#999CA1"/>
+
+    <!-- Torso Plaid Shirt -->
+    <path d="M410,405 C445,400 490,412 520,425 C550,412 595,400 635,405 C680,490 705,660 690,895 L360,895 C345,660 365,490 410,405 Z" fill="url(#plaidPattern)"/>
+    
+    <!-- Subtle Contours & Tucking Folds -->
+    <path d="M410,405 C375,550 370,720 375,895" stroke="#A8A295" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M635,405 C670,550 675,720 670,895" stroke="#A8A295" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M390,885 Q455,860 520,885 Q585,860 655,885" stroke="#524F47" stroke-width="2.5" fill="none" opacity="0.5"/>
+
+    <!-- Button Placket -->
+    <rect x="511" y="450" width="18" height="445" fill="#E5E0D5" stroke="#CAC3B5" stroke-width="1.5"/>
+    <g fill="#FAF9F6" stroke="#A19A8D" stroke-width="1.5">
+      <circle cx="520" cy="495" r="4"/>
+      <circle cx="520" cy="565" r="4"/>
+      <circle cx="520" cy="640" r="4"/>
+      <circle cx="520" cy="715" r="4"/>
+      <circle cx="520" cy="790" r="4"/>
+      <circle cx="520" cy="860" r="4"/>
+    </g>
+
+    <!-- Chest Pocket -->
+    <path d="M570,510 L630,510 L630,580 C630,595 570,595 570,580 Z" fill="url(#plaidPattern)" stroke="#9B9485" stroke-width="1.5"/>
+
+    <!-- Left Arm & Rolled Sleeve (Resting toward pocket) -->
+    <path d="M635,405 C670,450 705,550 693,690 L640,690 C650,570 625,480 595,430 Z" fill="url(#plaidPattern)"/>
+    <rect x="633" y="690" width="68" height="35" rx="4" fill="#EAE6DC" stroke="#B8B2A2" stroke-width="1.5" transform="rotate(8 667 707)"/>
+    <path d="M637,725 C645,790 651,860 641,935 L613,930 C618,865 613,795 605,725 Z" fill="url(#faceShading)"/>
+    <!-- Smartwatch on Left Wrist -->
+    <rect x="625" y="935" width="22" height="28" rx="11" fill="#17191C" stroke="#3D444D" stroke-width="3"/>
+    <circle cx="636" cy="949" r="7" fill="#252C36"/>
+    <!-- Left Hand in Pocket -->
+    <path d="M627,900 Q650,930 663,985 Q650,1015 633,1005 Q619,960 610,910 Z" fill="url(#faceShading)"/>
+
+    <!-- Right Arm & Rolled Sleeve (Relaxed at side) -->
+    <path d="M410,405 C375,450 340,550 353,690 L405,690 C395,570 420,480 450,430 Z" fill="url(#plaidPattern)"/>
+    <rect x="345" y="690" width="68" height="35" rx="4" fill="#EAE6DC" stroke="#B8B2A2" stroke-width="1.5" transform="rotate(-8 379 707)"/>
+    <path d="M407,725 C399,790 393,860 403,935 L431,930 C426,865 431,795 439,725 Z" fill="url(#faceShading)"/>
+    <!-- Sacred Thread Bracelet on Right Wrist -->
+    <rect x="400" y="928" width="34" height="6" rx="3" fill="#DC2626" stroke="#991B1B" stroke-width="0.5"/>
+    <!-- Right Hand with Ring -->
+    <path d="M405,950 C407,985 410,1030 419,1065 C429,1072 447,1060 441,1015 L433,950 Z" fill="url(#faceShading)"/>
+    <ellipse cx="413" cy="1035" rx="4.5" ry="2.5" fill="#F59E0B" stroke="#B45309" stroke-width="1.2"/>
+
+    <!-- Shirt Open Collar -->
+    <path d="M465,405 L520,465 L495,400 Z" fill="#F6F4ED" stroke="#B8B2A2" stroke-width="1.5"/>
+    <path d="M575,405 L520,465 L545,400 Z" fill="#F6F4ED" stroke="#B8B2A2" stroke-width="1.5"/>
+
+    <!-- Neck & Throat -->
+    <path d="M475,330 L565,330 L555,435 L485,435 Z" fill="url(#faceShading)"/>
+    <path d="M483,335 C520,375 545,375 560,335 L560,385 C535,410 505,410 483,385 Z" fill="url(#neckShadow)" fill-opacity="0.6"/>
+
+    <!-- Head & Facial Features -->
+    <g id="headDetails">
+      <!-- Skull / Face Structure -->
+      <path d="M425,200 C415,80 625,80 615,200 C615,270 600,335 520,348 C440,335 425,270 425,200 Z" fill="url(#faceShading)"/>
+
+      <!-- Buzzed Fade Hair -->
+      <path d="M431,190 C423,98 617,98 609,190 C591,115 449,115 431,190 Z" fill="url(#hairBuzzed)"/>
+      <path d="M427,180 C425,220 431,260 437,285 L431,270 C425,225 425,195 427,180 Z" fill="#1B1917" fill-opacity="0.6"/>
+      <path d="M613,180 C615,220 609,260 603,285 L609,270 C615,225 615,195 613,180 Z" fill="#1B1917" fill-opacity="0.6"/>
+
+      <!-- Ears -->
+      <g>
+        <ellipse cx="423" cy="240" rx="13" ry="26" fill="#C68862" stroke="#9B5F3A" stroke-width="1.5"/>
+        <path d="M423,225 Q428,240 423,255" stroke="#844D2A" stroke-width="2" fill="none"/>
+        <ellipse cx="617" cy="240" rx="13" ry="26" fill="#C68862" stroke="#9B5F3A" stroke-width="1.5"/>
+        <path d="M617,225 Q612,240 617,255" stroke="#844D2A" stroke-width="2" fill="none"/>
+      </g>
+
+      <!-- Eyebrows -->
+      <path d="M455,202 Q485,192 503,202" stroke="#191715" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+      <path d="M537,202 Q555,192 585,202" stroke="#191715" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+
+      <!-- Eyes -->
+      <g id="eyes">
+        <ellipse cx="480" cy="216" rx="14" ry="9" fill="#FAF9F5"/>
+        <circle cx="481" cy="216" r="6.8" fill="#22150C"/>
+        <circle cx="479.5" cy="216" r="4.2" fill="#0F0A06"/>
+        <circle cx="483" cy="213.5" r="2.2" fill="#FFFFFF"/>
+        <path d="M464,214 Q480,206 496,214" stroke="#141311" stroke-width="2.5" fill="none"/>
+        <path d="M467,220 Q480,225 494,220" stroke="#885331" stroke-width="1.2" fill="none"/>
+
+        <ellipse cx="560" cy="216" rx="14" ry="9" fill="#FAF9F5"/>
+        <circle cx="561" cy="216" r="6.8" fill="#22150C"/>
+        <circle cx="559.5" cy="216" r="4.2" fill="#0F0A06"/>
+        <circle cx="563" cy="213.5" r="2.2" fill="#FFFFFF"/>
+        <path d="M544,214 Q560,206 576,214" stroke="#141311" stroke-width="2.5" fill="none"/>
+        <path d="M547,220 Q560,225 574,220" stroke="#885331" stroke-width="1.2" fill="none"/>
+      </g>
+
+      <!-- Nose -->
+      <path d="M520,205 L517,250 Q509,262 520,263 Q531,262 523,250 Z" fill="#A46B47" fill-opacity="0.35"/>
+      <ellipse cx="520" cy="258" rx="9" ry="5" fill="#AA704C"/>
+      <ellipse cx="511" cy="259" rx="3.5" ry="2.5" fill="#703E22"/>
+      <ellipse cx="529" cy="259" rx="3.5" ry="2.5" fill="#703E22"/>
+
+      <!-- Full Beard & Mustache -->
+      <g id="beardDetails">
+        <path d="M431,250 C431,315 460,360 520,363 C580,360 609,315 609,250 C609,280 591,315 555,325 C537,330 503,330 485,325 C449,315 431,280 431,250 Z" fill="url(#beardShade)"/>
+        <path d="M490,285 Q520,278 550,285 Q520,302 490,285 Z" fill="#12100E"/>
+        <path d="M431,250 Q455,290 495,305 Q473,328 455,310 Z" fill="#181614"/>
+        <path d="M609,250 Q585,290 545,305 Q567,328 585,310 Z" fill="#181614"/>
+        <path d="M505,294 Q520,291 535,294" stroke="#955738" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        <path d="M508,310 Q520,306 532,310 Q535,335 520,345 Q505,335 508,310 Z" fill="#0F0E0D"/>
+      </g>
+    </g>
+
+  </g>
+</svg>
